@@ -27,6 +27,7 @@
             font-weight: bold;
             font-size: 46px;
             width: 193px;
+            margin-top: 194px;
             background-color: #000;
         }
 
@@ -34,14 +35,19 @@
         #dat {
             color: #0f0;
             font-weight: bold;
-            font-size: 20px;
-            width: 330px;
+            font-size: 24px;
+            width: 374px;
             background-color: #000;
+        }
+
+        .img {
+            background-image: url(https://vurbee.com.br/wp-content/uploads/2019/06/fundo-site-vurbee.jpg);
+            background-position: -755px 902px;
         }
     </style> <!-- ************FIM DA FOLHA DE ESTILO**************-->
 </head>
 
-<body>
+<body class="img">
     <!--INÍCIO DE TODO CONTEÚDO DO SITE-->
     <section>
         <div>
@@ -82,7 +88,7 @@
         // INÍCIO DA LÓGICA DA DATA DE HOJE
         function data() {
             dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
-            monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+            monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
             now = new Date
             var mudar = "Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ".";
             document.getElementById("dat").value = mudar;
